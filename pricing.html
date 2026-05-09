@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Mennatallah Soliman</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode pricing-page">
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="btn btn-outline btn-sm">
+                <i data-lucide="arrow-left" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></i>
+                <span data-key="backToPortfolio">Back to Portfolio</span>
+            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button id="lang-toggle" class="lang-btn">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pricing-main section">
+        <div class="container">
+            <div class="pricing-header">
+                <span class="badge"><i data-lucide="briefcase"></i> <span data-key="pricingBadge">Transparent Pricing</span></span>
+                <h1 data-key="pricingSubtitle">Choose Your Plan</h1>
+                <p data-key="pricingDesc">No hidden fees. Every plan is scoped to deliver real value — from a simple landing page to a full web application.</p>
+                <div class="info-banner">
+                    <i data-lucide="info"></i>
+                    <p data-key="pricingBanner">All plans include clean code, responsive design, and post-launch support. As a junior developer, I offer affordable rates to build my portfolio while delivering quality work.</p>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="plan-type" data-key="planStarter">STARTER</div>
+                    <h2 data-key="planBasicTitle">Basic</h2>
+                    <div class="price">$ 5–20 <span data-key="priceProject">/project</span></div>
+                    <p class="plan-desc" data-key="planBasicDesc">Perfect for simple static websites or personal landing pages.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Up to 3 Pages</li>
+                        <li><i data-lucide="check"></i> Responsive Design</li>
+                        <li><i data-lucide="check"></i> HTML/CSS/JavaScript</li>
+                        <li><i data-lucide="check"></i> Contact Form (basic)</li>
+                        <li><i data-lucide="check"></i> 1 Revision Round</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-outline" data-key="btnGetStarted">Get Started</a>
+                </div>
+
+                <!-- Balance Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">POPULAR</div>
+                    <div class="plan-type" data-key="planBalance">BALANCE</div>
+                    <h2 data-key="planBalanceTitle">Balance</h2>
+                    <div class="price">$ 40–70 <span data-key="priceProject">/project</span></div>
+                    <p class="plan-desc" data-key="planBalanceDesc">Ideal for business websites with dynamic content and basic React.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Up to 5 Pages</li>
+                        <li><i data-lucide="check"></i> Everything in Basic</li>
+                        <li><i data-lucide="check"></i> React.js Components</li>
+                        <li><i data-lucide="check"></i> Basic API Integration</li>
+                        <li><i data-lucide="check"></i> 2 Revision Rounds</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-outline" data-key="btnGetStarted">Get Started</a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card">
+                    <div class="plan-type" data-key="planProfessional">PROFESSIONAL</div>
+                    <h2 data-key="planProTitle">PRO</h2>
+                    <div class="price">$ 80–100 <span data-key="priceProject">/project</span></div>
+                    <p class="plan-desc" data-key="planProDesc">Full-stack project with React, Node.js, and database.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Up to 8 Pages</li>
+                        <li><i data-lucide="check"></i> Everything in Balance</li>
+                        <li><i data-lucide="check"></i> Node.js Backend</li>
+                        <li><i data-lucide="check"></i> Database Integration</li>
+                        <li><i data-lucide="check"></i> RESTful API</li>
+                        <li><i data-lucide="check"></i> 3 Revision Rounds</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-outline" data-key="btnGetStarted">Get Started</a>
+                </div>
+
+                <!-- Custom Plan -->
+                <div class="pricing-card custom">
+                    <div class="plan-type" data-key="planCustom">CUSTOM</div>
+                    <h2 data-key="planTalkTitle">Let's Talk</h2>
+                    <div class="price" data-key="priceFlexible">Flexible</div>
+                    <p class="plan-desc" data-key="planTalkDesc">Tailored solutions for complex projects with specific requirements.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Everything in PRO</li>
+                        <li><i data-lucide="check"></i> Custom Features</li>
+                        <li><i data-lucide="check"></i> Advanced Functionality</li>
+                        <li><i data-lucide="check"></i> Priority Support</li>
+                        <li><i data-lucide="check"></i> Ongoing Maintenance</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-primary" data-key="btnContactMe">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize icons for this page
+        lucide.createIcons();
+    </script>
+</body>
+</html>

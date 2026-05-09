@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mennatallah Soliman | Frontend Developer</title>
+    <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Navbar --> 
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">MS<span>.</span></a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-key="navHome" class="active">HOME</a></li>
+                <li><a href="#about" data-key="navAbout">ABOUT</a></li>
+                <li><a href="#education" data-key="navEducation">EDUCATION</a></li>
+                <li><a href="#skills" data-key="navSkills">SKILLS</a></li>
+                <li><a href="#experience" data-key="navExperience">EXPERIENCE</a></li>
+                <li><a href="#services" data-key="navServices">SERVICES</a></li>
+                <li><a href="#projects" data-key="navProjects">PROJECTS</a></li>
+                <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="#testimonials" data-key="navTestimonials">TESTIMONIALS</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button id="lang-toggle" class="lang-btn">AR</button>
+                <a href="#contact" class="btn btn-primary nav-btn" data-key="navContactBtn">Contact Me</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h4 class="hero-greeting" data-key="heroGreeting">Hello, I'm</h4>
+                <h1 class="hero-name">Menna Soliman</h1>
+                <h3 class="hero-subtitle">Frontend Developer</h3>
+                <p class="hero-summary" data-key="heroSummary">
+                    Building scalable React applications focused on performance and user experience.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary" data-key="btnViewProjects">View My Work</a>
+                    <a href="MennatallahSoliman.pdf" download="MennatallahSoliman.pdf" class="btn btn-outline">
+                        <i data-lucide="download" style="width: 18px; height: 18px; vertical-align: middle; margin-right: 5px;"></i>
+                        <span data-key="btnDownloadCVText">Download CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/20250213_223536 (1) (1).jpg" alt="Mennatallah Soliman" referrerPolicy="no-referrer">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section reveal">
+        <div class="container">
+            <h2 class="section-title" data-key="aboutTitle">About Me</h2>
+            <div class="about-card reveal-zoom">
+                <div class="about-content">
+                    <p data-key="aboutText1">
+                        I am Menna, a Frontend Developer specializing in React, building interactive and high-performance web applications that help startups and growing businesses achieve measurable results. My passion for creating intuitive user interfaces and turning designs into real applications drives me to continuously learn best practices and enhance the overall user experience.
+                    </p>
+                    <p data-key="aboutText2">
+                        I have hands-on experience in <span class="highlight-text">over 3 React projects</span>, including professional web applications and scalable dashboards. I focus on writing clean, maintainable code, optimizing performance, and delivering responsive designs that work efficiently across all devices. My work includes transforming complex UI/UX designs into functional applications, managing state, building reusable components, and delivering tangible results for both users and businesses.
+                    </p>
+                    <p data-key="aboutText3">
+                        I am skilled in React, JavaScript, HTML, CSS, Bootstrap, REST APIs, and Git, with a strong emphasis on performance optimization and creating seamless user experiences. I continuously refine my skills according to modern frontend standards, believing that great code should be functional, clear, maintainable, and impactful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates Section -->
+    <section id="education" class="education section bg-alt reveal">
+        <div class="container">
+            <h2 class="section-title" data-key="navEducation">Education & Certificates</h2>
+            <div class="edu-cert-layout stagger-container">
+                <div class="info-card education-card">
+                    <div class="card-header">
+                        <div class="header-left">
+                            <i data-lucide="graduation-cap" class="icon-accent"></i>
+                            <h3 data-key="eduHeader">Education</h3>
+                        </div>
+                        <span class="date">September 2022 – June 2025</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 data-key="eduDegree">Bachelor of Computer and Information Technology</h4>
+                        <p class="institution"><i data-lucide="school"></i> <span data-key="eduInstitution">Egyptian E-Learning University (EELU)</span></p>
+                        <div class="details">
+                            <p><strong data-key="eduMajor">Major: Information Technology (IT)</strong></p>
+                            <p><strong data-key="eduProject">Final Project: Excellent grade</strong></p>
+                            <p><strong data-key="eduGPA">GPA: 3.45 / 4.0 (Very Good) with Honors</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificates-section">
+                    <div class="section-header">
+                        <i data-lucide="award" class="icon-accent"></i>
+                        <h3 data-key="certHeader">Certificates</h3>
+                    </div>
+                    <div class="certificates-grid">
+                        <div class="cert-card reveal">
+                            <div class="cert-header">
+                                <div class="cert-logo-wrapper"><img src="images/1719256361352.jpg" alt="Web Masters"></div>
+                                <div class="cert-title-area">
+                                    <h3 data-key="cert1Name">React.js Training</h3>
+                                    <div class="cert-meta">
+                                        <div class="meta-item"><i data-lucide="building-2"></i><span data-key="cert1Inst">Web Masters Company</span></div>
+                                        <div class="meta-item"><i data-lucide="calendar"></i><span data-key="cert1Date">Jul 2025 - Aug 2025</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-tags">
+                                <span class="cert-tag"><i data-lucide="atom"></i> React.js</span>
+                                <span class="cert-tag"><i data-lucide="code"></i> JavaScript</span>
+                                <span class="cert-tag"><i data-lucide="layout"></i> UI/UX</span>
+                            </div>
+                            <div class="cert-footer">
+                                <a href="https://drive.google.com/file/d/1lC4JmJbxa7faVhfcr0VaVozt5ryYDpKc/view" target="_blank" class="view-cert-btn">
+                                    <span data-key="btnViewCert">View Certificate</span> <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-header">
+                                <div class="cert-logo-wrapper"><img src="images/1706316029249.jpg" alt="SEF Academy"></div>
+                                <div class="cert-title-area">
+                                    <h3 data-key="cert2Name">Frontend Development Training</h3>
+                                    <div class="cert-meta">
+                                        <div class="meta-item"><i data-lucide="building-2"></i><span data-key="cert2Inst">SEF Academy</span></div>
+                                        <div class="meta-item"><i data-lucide="calendar"></i><span data-key="cert2Date">2024</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-tags">
+                                <span class="cert-tag"><i data-lucide="html5"></i> HTML5</span>
+                                <span class="cert-tag"><i data-lucide="css3"></i> CSS3</span>
+                                <span class="cert-tag"><i data-lucide="smartphone"></i> Responsive</span>
+                            </div>
+                            <div class="cert-footer">
+                                <a href="https://drive.google.com/file/d/1_MfKVsTcbTczbqinzAyCCkBctU7_jG4K/view" target="_blank" class="view-cert-btn">
+                                    <span data-key="btnViewCert">View Certificate</span> <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-header">
+                                <div class="cert-logo-wrapper"><img src="images/logo.jpg" alt="ITI"></div>
+                                <div class="cert-title-area">
+                                    <h3 data-key="cert3Name">ITI Summer Training Program</h3>
+                                    <div class="cert-meta">
+                                        <div class="meta-item"><i data-lucide="building-2"></i><span data-key="cert3Inst">Information Technology Institute (ITI)</span></div>
+                                        <div class="meta-item"><i data-lucide="calendar"></i><span data-key="cert3Date">2024</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-tags">
+                                <span class="cert-tag"><i data-lucide="component"></i> Angular</span>
+                                <span class="cert-tag"><i data-lucide="database"></i> Web Dev</span>
+                                <span class="cert-tag"><i data-lucide="layers"></i> Scalable Apps</span>
+                            </div>
+                            <div class="cert-footer">
+                                <a href="https://drive.google.com/file/d/1fXfDkzAyeGOEdm50_pb-jvPFP2O8fa2n/view" target="_blank" class="view-cert-btn">
+                                    <span data-key="btnViewCert">View Certificate</span> <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-key="skillsTitle">My Skills</h2>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend"><i data-lucide="layout"></i> <span data-key="tabFrontend">FRONTEND</span></button>
+                <button class="tab-btn" data-tab="backend"><i data-lucide="server"></i> <span data-key="tabBackend">BACKEND</span></button>
+                <button class="tab-btn" data-tab="tools"><i data-lucide="wrench"></i> <span data-key="tabTools">TOOLS & TECHNOLOGIES</span></button>
+                <button class="tab-btn" data-tab="soft"><i data-lucide="users"></i> <span data-key="tabSoft">SOFT SKILLS</span></button>
+                <button class="tab-btn" data-tab="languages"><i data-lucide="languages"></i> <span data-key="tabLanguages">LANGUAGES</span></button>
+            </div>
+            <div class="skills-container" id="skills-container"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+    <!-- Experience Section -->
+    <section id="experience" class="experience section reveal">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 3rem;">
+                <span class="badge" data-key="navExperience">Experience</span>
+                <h2 class="section-title" data-key="expTitle" style="margin-top: 1rem;">My Professional Journey</h2>
+            </div>
+            <div class="timeline-v2">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><img src="images/images.png" alt="Digilians Logo"></div>
+                    <div class="timeline-date-wrapper"><span class="timeline-date" data-key="exp1Date">Feb 2026 - Present</span></div>
+                    <div class="timeline-content">
+                        <h3 data-key="exp1Title">Full-Stack Web Developer - Digilians</h3>
+                        <ul class="timeline-details">
+                            <li><span class="detail-label" data-key="labelChallenge">Challenge</span>: <span data-key="exp1Challenge">Build scalable web applications with modern stack</span></li>
+                            <li><span class="detail-label" data-key="labelAction">Action</span>: <span data-key="exp1Action">Developed apps using React.js and Node.js with REST APIs and database integration</span></li>
+                            <li><span class="detail-label" data-key="labelResult">Result</span>: <span data-key="exp1Result">Delivered production-ready applications with clean, maintainable code</span></li>
+                        </ul>
+                        <div class="timeline-footer"><a href="https://drive.google.com/file/d/1NqNGEv6an4-HSWfgKWLe80w0n4DH3Ivn/view?usp=sharing" class="cert-link"><span data-key="viewCertificate">View Certificate</span> <i data-lucide="external-link"></i></a></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><img src="images/1719256361352.jpg" alt="Web Masters Logo"></div>
+                    <div class="timeline-date-wrapper"><span class="timeline-date" data-key="exp2Date">Jul 2025 - Aug 2025</span></div>
+                    <div class="timeline-content">
+                        <h3 data-key="exp2Title">React.js Frontend Developer (Intern) - Web Masters Company</h3>
+                        <ul class="timeline-details">
+                            <li><span class="detail-label" data-key="labelChallenge">Challenge</span>: <span data-key="exp2Challenge">Build responsive and user-friendly UI components</span></li>
+                            <li><span class="detail-label" data-key="labelAction">Action</span>: <span data-key="exp2Action">Designed UI layouts using Figma and developed 10+ reusable React components</span></li>
+                            <li><span class="detail-label" data-key="labelResult">Result</span>: <span data-key="exp2Result">Delivered clean, responsive, and maintainable user interfaces</span></li>
+                        </ul>
+                        <div class="timeline-footer"><a href="https://drive.google.com/file/d/1m_Y2y95fv4bjsUmGVKNFKE-QkwYtw5kn/view" target="_blank" class="cert-link"><span data-key="viewCertificate">View Certificate</span> <i data-lucide="external-link"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services section reveal">
+        <div class="container">
+            <h2 class="section-title" data-key="servicesTitle">Services</h2>
+            <div class="services-grid stagger-container">
+                <div class="service-card"><i data-lucide="layout"></i><h3 data-key="service1Title">UI Development</h3><p data-key="service1Desc">Designing and building modern, responsive user interfaces.</p><div class="service-tech-list"><span>Figma</span><span>Bootstrap</span><span>CSS3</span></div></div>
+                <div class="service-card"><i data-lucide="globe"></i><h3 data-key="service2Title">Web Applications</h3><p data-key="service2Desc">Building full-featured web applications using React & Node JS.</p><div class="service-tech-list"><span>React.js</span><span>Next.js</span><span>Node.js</span></div></div>
+                <div class="service-card"><i data-lucide="server"></i><h3 data-key="service3Title">API Development</h3><p data-key="service3Desc">Secure and documented RESTful APIs for web app.</p><div class="service-tech-list"><span>Node JS</span><span>JWT Auth</span><span>Postman</span></div></div>
+            </div>
+            <div class="services-footer"><a href="pricing.html" class="btn btn-outline" data-key="btnViewPricing">View Pricing Planning</a></div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects section bg-alt reveal">
+    <div class="container">
+        <h2 class="section-title" data-key="projectsTitle">Featured Projects</h2>
+        <div class="projects-grid-centered stagger-container">
+
+            <!-- E-Commerce Project -->
+            <div class="project-card-v2">
+                <div class="project-img-v2">
+                    <img src="images/Beige New Product Mockup Now Available Facebook Post.png" alt="E-Commerce Platform">
+                </div>
+
+                <div class="project-content-v2">
+                    <h3 data-key="project1Title">E-Commerce Platform</h3>
+
+                    <div class="project-details-v2">
+                        <p><strong>Challenge:</strong> <span data-key="project1Challenge">Build scalable e-commerce app</span></p>
+                        <p><strong>Action:</strong> <span data-key="project1Action">Developed using React.js, dynamic filtering, cart management</span></p>
+                        <p><strong>Result:</strong> <span data-key="project1Result">Fully functional platform with smooth UX</span></p>
+                    </div>
+
+                    <div class="project-tags-v2">
+                        <span>React.js</span>
+                        <span>Bootstrap</span>
+                        <span>REST API</span>
+                    </div>
+
+                    <!-- زرار الكود بس -->
+                    <div class="project-btns-v2">
+                        <a href="https://github.com/mennatahhah-soliman/e-commerce" target="_blank" class="btn-project video">
+                            <i data-lucide="github"></i> 
+                            <span data-key="btnvideo">Code</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Autism Project -->
+            <div class="project-card-v2">
+                <div class="project-img-v2">
+                    <img src="images/Beige New Product Mockup Now Available Facebook Post (2).png" alt="Autism Champions">
+                </div>
+
+                <div class="project-content-v2">
+                    <h3 data-key="project2Title">Autism Champions Platform</h3>
+
+                    <div class="project-details-v2">
+                        <p><strong>Challenge:</strong> <span data-key="project2Challenge">Interactive platform for autism support</span></p>
+                        <p><strong>Action:</strong> <span data-key="project2Action">React.js, Tailwind CSS, AI chatbot</span></p>
+                        <p><strong>Result:</strong> <span data-key="project2Result">Intelligent platform with real-time assistance</span></p>
+                    </div>
+
+                    <div class="project-tags-v2">
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>AI Chatbot</span>
+                    </div>
+
+                    
+                    <div class="project-btns-v2">
+                        <a href="https://drive.google.com/file/d/10qqmd7xe9AxUOBIMJn_cOk4LYQHWNZ3e/view" target="_blank" class="btn-project video">
+                            <i data-lucide="play-circle"></i> 
+                            <span data-key="btnVideo">Video</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="achievements" class="testimonials section bg-alt reveal">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Achievements</h2>
+        </div>
+
+        <div class="coming-soon-card">
+            <div class="coming-soon-icon">
+                <i data-lucide="trophy"></i>
+            </div>
+
+            <h3>Coming Soon!</h3>
+
+            <p>
+                My achievements and milestones will be displayed here soon. Stay tuned!
+            </p>
+
+            <div class="animated-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section bg-alt reveal">
+        <div class="container">
+            <div class="section-header text-center"><h2 class="section-title" data-key="navTestimonials">Testimonials</h2></div>
+            <div class="coming-soon-card"><div class="coming-soon-icon"><i data-lucide="clock"></i></div><h3 data-key="comingSoonTitle">Coming Soon!</h3><p data-key="comingSoonDesc">Testimonials from my amazing clients are on their way. Stay tuned!</p><div class="animated-dots"><span></span><span></span><span></span></div></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact section reveal">
+    <div class="container">
+        <h2 class="section-title" data-key="contactTitle">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info reveal-left">
+                <div class="info-item-card">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Fayoum,Egypt</p>
+                </div>
+               <a href="mailto:mennasoliman592003@gmail.com" class="info-item-card">
+                    <i class="bi bi-envelope"></i>
+                    <p>mennasoliman592003@gmail.com</p>
+                </a>
+                <a href="tel:01025445505" class="info-item-card">
+                    <i class="bi bi-telephone"></i>
+                    <p>01025445505</p>
+                </a>
+               <a href="https://wa.me/201025445505" target="_blank" class="info-item-card whatsapp-card">
+                    <i class="bi bi-whatsapp"></i>
+                    <p>WhatsApp</p>
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/mennatahhah-soliman" target="_blank" class="social-btn">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mennatallah2soliman" target="_blank" class="social-btn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form reveal-right">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" data-key="btnSendMessage">Send Message</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-col reveal-left">
+                <h3 data-key="footerShyTitle">DON'T BE SHY!</h3>
+                <p data-key="footerShyText">
+                    Feel free to get in touch with me. I am always open to discussing new projects,
+                    creative ideas or opportunities to be part of your visions.
+                </p>
+
+                <!-- Freelance Platforms -->
+                <div class="freelance-links">
+
+                    <a href="https://nafezly.com/my/portfolios" target="_blank" title="Nafezly">
+                        <i class="fas fa-rocket"></i>
+                    </a>
+
+                  <a href="https://mostaql.com/u/mennasoliman59/portfolio" target="_blank" title="Mostaql">
+                        <i class="fas fa-laptop-code"></i>
+                    </a>
+
+                    <a href="https://khamsat.com/user/mennasoliman59" target="_blank" title="Khamsat">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+
+
+                    <a href="https://kafiil.com/service/my-services" target="_blank" title="Kafiil">
+                        <i class="fas fa-user-tie"></i>
+                    </a>
+
+                    
+
+                  
+                </div>
+            </div>
+
+            <div class="footer-col footer-logo-col reveal">
+                <a href="#" class="footer-logo">MS<span>.</span></a>
+            </div>
+
+            <div class="footer-col reveal-right">
+                <h3 data-key="footerWhoTitle">WHO AM I?</h3>
+                <p data-key="footerWhoText">
+                    I'm a Frontend Developer & React.js Enthusiast, passionate and dedicated to my work.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright" data-key="footerCopyright">
+                © 2026 Mennatallah Soliman. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <button id="scroll-top" class="scroll-top-btn"><i data-lucide="arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>  
